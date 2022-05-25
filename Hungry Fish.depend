@@ -1,36 +1,34 @@
 # depslib dependency file v1.0
-1652890109 source:c:\users\dell\desktop\hungry fish\src\main.cpp
+1653412565 source:c:\users\dell\desktop\hungry fish\src\main.cpp
 	"Menu.h"
 	"MainGame.h"
 	"GameEngine.h"
-	"Credits.h"
-	"HighScores.h"
 
-1652941722 source:c:\users\dell\desktop\hungry fish\src\gameengine.cpp
+1653390689 source:c:\users\dell\desktop\hungry fish\src\gameengine.cpp
 	"GameEngine.h"
 
-1651031705 source:c:\users\dell\desktop\hungry fish\src\aifishleft.cpp
+1653412463 source:c:\users\dell\desktop\hungry fish\src\aifishleft.cpp
 	"AiFishLeft.h"
 
 1652935621 source:c:\users\dell\desktop\hungry fish\src\texturesmanager.cpp
 	"TexturesManager.h"
 
-1652891763 source:c:\users\dell\desktop\hungry fish\src\aifishright.cpp
+1653386309 source:c:\users\dell\desktop\hungry fish\src\aifishright.cpp
 	"AiFishRight.h"
 
-1652864690 source:c:\users\dell\desktop\hungry fish\src\audiomanager.cpp
+1653454741 source:c:\users\dell\desktop\hungry fish\src\audiomanager.cpp
 	"AudioManager.h"
 
-1652938385 source:c:\users\dell\desktop\hungry fish\src\mainfish.cpp
+1653453485 source:c:\users\dell\desktop\hungry fish\src\mainfish.cpp
 	"MainFish.h"
 
 1652241544 source:c:\users\dell\desktop\hungry fish\src\firstmenu.cpp
 	"FirstMenu.h"
 
-1652889892 source:c:\users\dell\desktop\hungry fish\src\menu.cpp
+1653452714 source:c:\users\dell\desktop\hungry fish\src\menu.cpp
 	"Menu.h"
 
-1652944685 source:c:\users\dell\desktop\hungry fish\src\maingame.cpp
+1653454989 source:c:\users\dell\desktop\hungry fish\src\maingame.cpp
 	"MainGame.h"
 
 1652330560 c:\users\dell\desktop\hungry fish\src\maingame.cpp

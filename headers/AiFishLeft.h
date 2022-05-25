@@ -4,18 +4,20 @@
 #include "include.h"
 #include "TexturesManager.h"
 #include "GameEngine.h"
-
+#include "Timer.h"
 class AiFishLeft_Level1
 {
       public:
-        // W and H of AIs
-        const int AI_WIDTHL1 = gAiFishLeft_Level1[0].getWidth();
-		const int AI_HEIGHTL1 = gAiFishLeft_Level1[0].getHeight();
+
+        const int AI_WIDTHL1 = 32;
+
+        const int AI_HEIGHTL1 = 27;
 
 		AiFishLeft_Level1();
 
 		~AiFishLeft_Level1();
 
+		void update();
 
 		void moveAIL1(int incaseAI);
 
@@ -36,22 +38,29 @@ class AiFishLeft_Level1
         double AiVelX[maxAIfishes_level1], AiVelY[maxAIfishes_level1];
 
     private:
-        SDL_RendererFlip flip=SDL_FLIP_NONE;
 
-        ManageTexture gAiFishLeft_Level1[maxAIfishes_level1];
+        double frame[maxAIfishes_level1];
+
+        Timer timer[maxAIfishes_level1];
+
+        SDL_RendererFlip flip=SDL_FLIP_HORIZONTAL;
+
+        ManageTexture gAiFishLeft_Level1[maxAIfishes_level1*3];
 };
 
 class AiFishLeft_Level2
 {
    public:
         // W and H of AIs
-        const int AI_WIDTHL2 = gAiFishLeft_Level2[0].getWidth();
+        const int AI_WIDTHL2 = 115;
 
-		const int AI_HEIGHTL2 = gAiFishLeft_Level2[0].getHeight();
+		const int AI_HEIGHTL2 = 54;
 
 		AiFishLeft_Level2();
 
 		~AiFishLeft_Level2();
+
+		void update();
 
 		void moveAIL2(int incaseAI);
 
@@ -72,7 +81,12 @@ class AiFishLeft_Level2
         double AiVelX[maxAIfishes_level2], AiVelY[maxAIfishes_level2];
 
     private:
-        ManageTexture gAiFishLeft_Level2[maxAIfishes_level2];
+
+        double frame[maxAIfishes_level2];
+
+        Timer timer[maxAIfishes_level2];
+
+        ManageTexture gAiFishLeft_Level2[maxAIfishes_level2*4];
 
         SDL_RendererFlip flip=SDL_FLIP_HORIZONTAL;
 };
@@ -82,12 +96,14 @@ class AiFishLeft_Level3
 {
      public:
         // W and H of AIs
-        const int AI_WIDTHL3 = gAiFishLeft_Level3[0].getWidth();
-		const int AI_HEIGHTL3 = gAiFishLeft_Level3[0].getHeight();
+        const int AI_WIDTHL3 = 200;
+		const int AI_HEIGHTL3 = 124;
 
 		AiFishLeft_Level3();
 
 		~AiFishLeft_Level3();
+
+        void update();
 
 		void moveAIL3(int incaseAI);
 
@@ -108,9 +124,14 @@ class AiFishLeft_Level3
         double AiVelX[maxAIfishes_level3], AiVelY[maxAIfishes_level3];
 
     private:
-        ManageTexture gAiFishLeft_Level3[maxAIfishes_level3];
 
-        SDL_RendererFlip flip=SDL_FLIP_HORIZONTAL;
+        double frame[maxAIfishes_level3];
+
+        Timer timer[maxAIfishes_level3];
+
+        ManageTexture gAiFishLeft_Level3[maxAIfishes_level3*3];
+
+        SDL_RendererFlip flip=SDL_FLIP_NONE;
 };
 
 

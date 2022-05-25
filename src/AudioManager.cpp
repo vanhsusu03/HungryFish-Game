@@ -1,13 +1,15 @@
 #include "AudioManager.h"
 
 Mix_Music* Audio::gingame = nullptr;
+Mix_Music* Audio::gMenu = nullptr;
 Mix_Chunk* Audio::gEatlevel1 = nullptr;
 Mix_Chunk* Audio::gEatlevel2 = nullptr;
 Mix_Chunk* Audio::gEatlevel3 = nullptr;
 Mix_Chunk* Audio::gHavingBeenEaten = nullptr;
 Mix_Chunk* Audio::gNextLevel = nullptr;
-Mix_Chunk* Audio::gWin1Game = nullptr;
+Mix_Chunk* Audio::gWinGame = nullptr;
 Mix_Chunk* Audio::gMenuButton = nullptr;
+Mix_Chunk* Audio::gLoseGame = nullptr;
 
 Audio::Audio()
 {
@@ -19,7 +21,7 @@ Audio::~Audio()
 
 }
 
-void Audio::AudioInit()
+void Audio::MusicInit()
 {
     gingame = Mix_LoadMUS("audios/Peacefulround.mp3");
     if(gingame == nullptr)
@@ -28,6 +30,17 @@ void Audio::AudioInit()
         Mix_GetError();
     }
 
+    gMenu = Mix_LoadMUS("audios/Ins_Help_HighS_Setting.mp3");
+    if(gMenu == nullptr)
+    {
+        printf("Could not load GMENU! %s\n");
+        Mix_GetError();
+    }
+
+}
+
+void Audio::ChannelInit()
+{
     gEatlevel1 = Mix_LoadWAV("audios/eatlevel1.wav");
     if(gEatlevel1 == nullptr)
     {
@@ -69,21 +82,8 @@ void Audio::AudioInit()
         printf("Could not load gMenuButton %s\n");
         Mix_GetError();
     }
+    gWinGame = Mix_LoadWAV ("audios/winMenu.wav");
 
-}
+    gLoseGame = Mix_LoadWAV("audios/endMenu.wav");
 
-void Audio::stopAudio()
-{
-    Mix_HaltMusic();
-}
-
-bool Audio::checkAudio()
-{
-    if( Mix_PlayingMusic() == 0 )
-    {
-        return false;
-    }
-    else{
-        return true;
-    }
 }

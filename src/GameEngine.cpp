@@ -8,10 +8,23 @@ bool Engine::tickM = true;
 bool Engine::tickS = true;
 bool Engine::level2 = false;
 bool Engine::level3 = false;
-double Engine::countl1 = 0;
-double Engine::countl2 = 0;
-double Engine::countl3 = 0;
+bool Engine::stillAlive ;
+int Engine::countl1 = 0;
+int Engine::countl2 = 0;
+int Engine::countl3 = 0;
+Audio Engine::audio;
 
+int Engine::readBest()
+{
+    int best = 0;
+    SDL_RWops *file = SDL_RWFromFile("text/score.bin", "r+b"); //nếu tệp không tồn tại thì sẽ được tạo và kỉ lục tính là 0
+    if (file)
+    {
+        SDL_RWread(file, &best, sizeof(int), 1);
+        SDL_RWclose(file);
+    }
+    return best;
+}
 bool Engine::initProg()
 {
     bool success=true;
@@ -68,9 +81,10 @@ bool Engine::initProg()
                             printf("SDL_ttf could not init ttf %n\n", TTF_GetError());
                             success= false;
                         }
-                        else Engine::gFont = TTF_OpenFont("fonts/KaushanScript-Regular.otf",30);
+                        else Engine::gFont = TTF_OpenFont("fonts/Waterlily Script.ttf",42);
                     }
-                    audio.AudioInit();
+                    audio.MusicInit();
+                    audio.ChannelInit();
 			}
 		}
 	}

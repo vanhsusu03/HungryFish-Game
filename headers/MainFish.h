@@ -12,15 +12,19 @@ class MainFish
 {
     public:
 
-        const int MFISH_VEL=3.5;
+        int MAINFISHWIDTH = 80, MAINFISHHEIGHT = 43;
 
 		MainFish();
 
 		~MainFish();
 
-		void handleEventMainFish( SDL_Event& e);
+		bool isLeft, isRight;
 
-		void moveMainFish();
+		void handleEventMainFish(SDL_Event &e);
+
+		void updateGame();
+
+		void updateNextlevel();
 
         void checkCollision_L1();
 
@@ -34,16 +38,6 @@ class MainFish
 
         void renderMainFish( );
 
-        void win1Game();
-
-        int getCurrentPosXMainFish();
-
-        int getCurrentPosYMainFish();
-
-        SDL_RendererFlip flip = SDL_FLIP_NONE;
-
-        SDL_RendererFlip flipf=SDL_FLIP_HORIZONTAL;
-
 		//Current position
 		int mPosX, mPosY;
 
@@ -52,11 +46,20 @@ class MainFish
 
 		int mousex, mousey;
 
-		ManageTexture gMainFish;
+		int frame;
+
+		int premousex, premousey;
+
+		ManageTexture gMainFish[5];
 
         Timer time;
 
-        int premousex, premousey;
+        Timer timer;
+
+        SDL_RendererFlip flip = SDL_FLIP_HORIZONTAL;
+
+        SDL_RendererFlip flipf=SDL_FLIP_NONE;
+
 		//Init AI fishes of Program
         AiFishLeft_Level1 fishl1[maxAIfishes_level1];
         AiFishRight_Level1 fishr1[maxAIfishes_level1];
@@ -66,9 +69,6 @@ class MainFish
 
         AiFishLeft_Level3 fishl3[maxAIfishes_level3];
         AiFishRight_Level3 fishr3[maxAIfishes_level3];
-
-        //init bubble in Program
-        //Bubble bubble[maxBubble];
 };
 
 #endif // MAINFISH_H_INCLUDED

@@ -13,21 +13,22 @@ class Audio
     ~Audio();
 
     static Mix_Music* gingame;
+    static Mix_Music* gMenu;
     static Mix_Chunk* gEatlevel1;
     static Mix_Chunk* gEatlevel2;
     static Mix_Chunk* gEatlevel3;
     static Mix_Chunk* gHavingBeenEaten;
     static Mix_Chunk* gNextLevel;
-    static Mix_Chunk* gWin1Game;
+    static Mix_Chunk* gWinGame;
     static Mix_Chunk* gMenuButton;
+    static Mix_Chunk* gLoseGame;
+    void MusicInit();
 
-    void AudioInit();
+    void ChannelInit();
 
-    void stopAudio();
+    void MusicClose();
 
-    bool checkAudio();
-
-    void AudioClose();
+    void ChannelClose();
 };
 
 #endif // AUDIOMANAGER_H_INCLUDED

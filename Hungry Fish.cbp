@@ -5,6 +5,7 @@
 		<Option title="Hungry Fish" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="headers/;src/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/Hungry Fish" prefix_auto="1" extension_auto="1" />
@@ -34,9 +35,7 @@
 		<Unit filename="headers/AiFishLeft.h" />
 		<Unit filename="headers/AiFishRight.h" />
 		<Unit filename="headers/AudioManager.h" />
-		<Unit filename="headers/Credits.h" />
 		<Unit filename="headers/GameEngine.h" />
-		<Unit filename="headers/HighScores.h" />
 		<Unit filename="headers/MainFish.h" />
 		<Unit filename="headers/MainGame.h" />
 		<Unit filename="headers/Menu.h" />
@@ -46,15 +45,15 @@
 		<Unit filename="src/AiFishLeft.cpp" />
 		<Unit filename="src/AiFishRight.cpp" />
 		<Unit filename="src/AudioManager.cpp" />
-		<Unit filename="src/Credits.cpp" />
 		<Unit filename="src/GameEngine.cpp" />
-		<Unit filename="src/HighScores.cpp" />
 		<Unit filename="src/MainFish.cpp" />
 		<Unit filename="src/MainGame.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/TexturesManager.cpp" />
 		<Unit filename="src/Timer.cpp" />
-		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
