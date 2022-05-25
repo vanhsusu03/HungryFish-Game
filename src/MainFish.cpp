@@ -87,7 +87,7 @@ void MainFish::updateNextlevel()
         MAINFISHHEIGHT = 70;
         Engine::level2 = true;
     }
-    if(Engine::countl1 + Engine::countl2 >= 100 && Engine::level3 == false)
+    if(Engine::countl1 + Engine::countl2 >= 150 && Engine::countl2 >= 35 && Engine::level3 == false)
     {
         Mix_PlayChannel(-1,Audio::gNextLevel,0);
         gMainFish[0].loadImage(fishmain_lv3);

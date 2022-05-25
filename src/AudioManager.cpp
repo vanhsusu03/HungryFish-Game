@@ -36,7 +36,6 @@ void Audio::MusicInit()
         printf("Could not load GMENU! %s\n");
         Mix_GetError();
     }
-
 }
 
 void Audio::ChannelInit()
