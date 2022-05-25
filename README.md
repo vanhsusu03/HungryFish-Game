@@ -12,7 +12,7 @@
 
 ### *Mô tả game và hướng dẫn chơi*
 
-- Ý tưởng xây dựng **Hungry Fish** bắt nguồn từ tựa game **Feeding Frenzy** kinh điển những năm 2010. 
+- Ý tưởng xây dựng **Hungry Fish** bắt nguồn từ tựa game **Feeding Frenzy** kinh điển những năm 2010. Đây sẽ vừa là một trải nghiệm mới nhưng đồng thời cũng quen thuộc với tuổi thơ của những người chơi lớn tuổi.
 
 - Có 3 loại cá xuất hiện trong game. Người chơi di chuyển chú cá mập ăn những loại cá nhỏ hơn nó, đồng thời cố gắng né tránh các mối đe dọa từ những loại cá lớn hơn. 
 
@@ -25,7 +25,7 @@
 
 - Trò chơi có đủ tích hợp các chức năng hỗ trợ người chơi: hướng dẫn chơi chi tiết, bật/tắt âm thanh game, ghi nhận điểm cao, tạm dừng game khi đang chơi (esc key),...
 
-- Video demo: 
+- Video demo: https://youtu.be/2MgQvJk0ndI 
 
 ### *Điều khiển trò chơi*
 
@@ -43,7 +43,7 @@
 
 - Tải file rar theo đường link sau: https://drive.google.com/drive/folders/1QWWvFZcg2JDLI2CwGDsXPVNKGdPzs36d?usp=sharing
 
-- Giải nén file vừa tải, mở folder *Release*, chạy file *Hungry Fish.exe* để bắt đầu chơi.
+- Giải nén file vừa tải, mở folder *HungryFishGame*, chạy file *Hungry Fish.exe* để bắt đầu chơi.
 
 ### ***Đối tượng 2*** : **Có nhu cầu tham khảo, sử dụng source code để phát triển thêm**
 
