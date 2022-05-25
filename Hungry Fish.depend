@@ -53,3 +53,36 @@
 	"Timer.h"
 	"include.h"
 
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\aifishleft.cpp
+	"AiFishLeft.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\aifishright.cpp
+	"AiFishRight.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\audiomanager.cpp
+	"AudioManager.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\gameengine.cpp
+	"GameEngine.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\main.cpp
+	"Menu.h"
+	"MainGame.h"
+	"GameEngine.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\mainfish.cpp
+	"MainFish.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\maingame.cpp
+	"MainGame.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\menu.cpp
+	"Menu.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\texturesmanager.cpp
+	"TexturesManager.h"
+
+1653462511 source:c:\users\dell\desktop\fish\hungry-fish\src\timer.cpp
+	"Timer.h"
+	"include.h"
+
