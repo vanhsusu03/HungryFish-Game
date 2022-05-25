@@ -74,6 +74,8 @@
 
 - Kĩ thuật tách file.
 
+- Sử dụng và quản lí mảng, xử lí đồ họa.
+
 - Tạo, sử dụng và quản lí class nhiều đối tượng: cá, điểm ,hình ảnh, âm thanh,...
 
 - Xử lí hình ảnh, thời gian, sự kiện SDL, bật/tắt âm thanh, di chuyển đối tượng, xử lí va chạm, tính toán tọa độ,....
