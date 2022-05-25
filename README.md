@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ***Hungry-Fish***
 
 ## **Giới thiệu**
